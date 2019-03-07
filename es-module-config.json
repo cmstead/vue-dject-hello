@@ -1,0 +1,9 @@
+{
+    "cwd": "src",
+    "djectLocation": "dject",
+    "isNodeApplication": false,
+    "destinationPath": "${cwd}/vue-container.js",
+    "modulePaths": [
+        "dependencies/**/*.{js,vue}"
+    ]
+}
