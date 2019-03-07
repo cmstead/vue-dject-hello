@@ -5,13 +5,14 @@
   "author": "Chris Stead <cmstead@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "dject --build-import-container && webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "npm run build-container && webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "dject --build-import-container && node build/build.js"
+    "build": "npm run build-container && node build/build.js",
+    "build-container": "node ./node_modules/dject-cli/ --build-import-container"
   },
   "dependencies": {
     "dject": "^1.13.3",
@@ -38,6 +39,7 @@
     "cross-env": "^5.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.11",
+    "dject-cli": "^1.5.3",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
