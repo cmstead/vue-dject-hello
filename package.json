@@ -15,7 +15,7 @@
     "build-container": "node ./node_modules/dject-cli/ --build-import-container"
   },
   "dependencies": {
-    "dject": "^1.13.3",
+    "dject": "^1.14.2",
     "vue": "^2.6.8",
     "vue-router": "^3.0.1"
   },
@@ -39,7 +39,7 @@
     "cross-env": "^5.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.11",
-    "dject-cli": "^1.5.3",
+    "dject-cli": "^2.0.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",

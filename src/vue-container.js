@@ -1,13 +1,16 @@
-import module0 from '../src/dependencies/App.vue';
-import module1 from '../src/dependencies/components/HelloWorld.vue';
-import module2 from '../src/dependencies/components/LinkList.vue';
-import module3 from '../src/dependencies/raw-data/EcosystemLinks';
-import module4 from '../src/dependencies/raw-data/EssentialLinks';
-import module5 from '../src/dependencies/router/index';
-import module6 from '../src/dependencies/wrapped-modules/vue';
+import module0 from '../src/dependencies/js-source/raw-data/EcosystemLinks';
+import module1 from '../src/dependencies/js-source/raw-data/EssentialLinks';
+import module2 from '../src/dependencies/js-source/router/index';
+import module3 from '../src/dependencies/js-source/wrapped-modules/vue';
+import module4 from '../src/dependencies/js-source/wrapped-modules/vueRouter';
+import module5 from '../src/dependencies/vue-source/components/App.vue';
+import module6 from '../src/dependencies/vue-source/components/HelloWorld.vue';
+import module7 from '../src/dependencies/vue-source/components/LinkList.vue';
 
 
-const container = window.dject.new({});
+const container = window.dject.new({
+    dependenciesAsObject: true
+});
 
 
 container.copyProps(module0.value, module0);
@@ -30,6 +33,9 @@ container.register(module5.value, module5.name);
 
 container.copyProps(module6.value, module6);
 container.register(module6.value, module6.name);
+
+container.copyProps(module7.value, module7);
+container.register(module7.value, module7.name);
 
 
 window.appContainer = container;

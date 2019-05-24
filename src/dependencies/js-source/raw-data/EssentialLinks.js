@@ -1,4 +1,4 @@
-function essentialLinks(...injectedDependencies) {
+function essentialLinks() {
     const essentialLinks = [
         {
             href: "https://vuejs.org",

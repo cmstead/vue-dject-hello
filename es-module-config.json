@@ -4,6 +4,7 @@
     "isNodeApplication": false,
     "destinationPath": "${cwd}/vue-container.js",
     "modulePaths": [
-        "dependencies/**/*.{js,vue}"
+        "dependencies/js-source/**/*.js",
+        "dependencies/vue-source/**/*.vue"
     ]
 }

@@ -1,4 +1,4 @@
-function ecosystemLinks(...injectedDependencies) {
+function ecosystemLinks() {
     const ecosystemLinks = [
         {
             href: "http://router.vuejs.org/",
